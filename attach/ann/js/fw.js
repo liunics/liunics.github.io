@@ -1,17 +1,17 @@
 $(function() {
-	var canvas = $('#canvas')[0];
-	canvas.width = 270;
-	canvas.height = 270;
+	var canvas = $('#fireworks-canvas')[0];
+	canvas.width = 386;
+	canvas.height = window.innerHeight;
 	var ctx = canvas.getContext('2d');
 
 	// resize
-	$(window).on('resize', function() {
-		canvas.width = 270;
-		canvas.height = 270;
-		ctx.fillStyle = '#000003';
-		ctx.fillRect(0, 0, canvas.width, canvas.height);
-		center = { x: canvas.width / 2, y: canvas.height / 2 };
-	});
+	// $(window).on('resize', function() {
+	// 	canvas.width = 386;
+	// 	canvas.height = window.innerWidth;
+	// 	ctx.fillStyle = '#000003';
+	// 	ctx.fillRect(0, 0, canvas.width, canvas.height);
+	// 	center = { x: canvas.width / 2, y: canvas.height / 2 };
+	// });
 
 	// init
 	ctx.fillStyle = '#000003';

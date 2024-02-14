@@ -1,4 +1,4 @@
-var canvas = document.getElementById('background-canvas');
+var canvas = document.getElementById('cmatrix-canvas');
 var ctx = canvas.getContext('2d');
 
 canvas.height = window.innerHeight;

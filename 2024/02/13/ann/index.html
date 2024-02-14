@@ -1,5 +1,6 @@
 <head>
 <title>I LOVE U</title>
+<link rel="stylesheet" href="/attach/ann/css/style.css">
 <link rel="icon" href="/attach/ann/heart.svg" type="image/x-icon"/>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
 </head>
@@ -24,18 +25,19 @@ alert(time);
 </div>
 <!-- --------- -->
 
-<!-- 背景 -->
-<p><canvas id="background-canvas"></canvas></p>
-<script type="text/javascript" src="/attach/ann/js/bg.js"></script>
+<!-- 这里是背景 -->
+<p><canvas id="cmatrix-canvas"></canvas></p>
+<script type="text/javascript" src="/attach/ann/js/cm.js"></script>
 <!-- --------- -->
 
-<div style='width:286px;text-align:left;border:2px solid #ccc;margin:0px auto;padding:50px;font-family:"Times New Roman";'>
+<div style='width:386px;border:2px solid #ccc;margin:0px auto;padding:0px;'>
 
-<h1 align='center' style="color:red">情人节快乐</h1>
-<!-- 这里是烟花 -->
+<h1 align='center' style="color:red;font-family:'STLiti';">情人节快乐</h1>
+
 <center>
-<canvas id="canvas" style="width: 270px;display: block;margin:0px auto;"></canvas>
 
+<!-- 这里是烟花 -->
+<p><canvas id="fireworks-canvas"></canvas></p>
 <div class="block-audio" hidden="hidden" style="display: none;">
   <audio class="exp" src="/attach/ann/m/exp1.mp3" controls></audio>
   <audio class="exp" src="/attach/ann/m/exp1.mp3" controls></audio>
@@ -73,29 +75,24 @@ alert(time);
   <audio class="launch" src="/attach/ann/m/launch5.mp3" controls></audio>
 </div>
 
-<link rel="stylesheet" href="/attach/ann/css/style.css">
 <script type="text/javascript" src="/attach/ann/js/jquery.min.js"></script>
-<script type="text/javascript" src="/attach/ann/js/index.js"></script>
+<script type="text/javascript" src="/attach/ann/js/fw.js"></script>
 <!-- --------- -->
 
 <!-- 这里是照片 -->
 <div style="border: 2px solid red;width: 270px;height: 90px;">
-  <img src="/attach/ann/head.jpg" class="img-first" />
-</div>
-<div style="border: 2px solid green;width: 270px;height: 90px;margin-top: 20px;">
-  <img src="/attach/ann/head.jpg" class="img-second" />
-</div>
-<div style="border: 2px solid orange;width: 270px;height: 90px;margin-top: 20px;padding: 0px;">
   <img src="/attach/ann/head.jpg" class="img-third" />
 </div>
-
-<link rel="stylesheet" href="/attach/ann/css/image.css">
+<div style="border: 2px solid green;width: 270px;height: 90px;margin-top: 20px;">
+  <img src="/attach/ann/head.jpg" class="img-first" />
+</div>
+<div style="border: 2px solid orange;width: 270px;height: 90px;margin-top: 20px;padding: 0px;">
+  <img src="/attach/ann/head.jpg" class="img-second" />
+</div>
 <!-- --------- -->
 
 <!-- 这里是玫瑰花 -->
-<div>
-<?xml version="1.0" encoding="utf-8"?>
-<svg  id='svg' width='270px' viewBox="0 0 188 264" xmlns="http://www.w3.org/2000/svg">
+<svg id='svg' width='270px' viewBox="0 0 188 264" xmlns="http://www.w3.org/2000/svg">
  <defs>
     <radialGradient id="gradient-0" gradientUnits="userSpaceOnUse" cx="-107.308" cy="104.329" r="59.181" gradientTransform="matrix(0.261752, 0.411262, -0.686293, 0.596934, 160.094667, 49.38985)">
       <stop offset="0" style="stop-color: rgb(255, 0, 0);"/>
@@ -174,39 +171,38 @@ alert(time);
   <path d="M 68.14 97.964 C 70.663 106.543 101.871 103.202 99.324 94.541 C 100.286 103.186 107.338 120.762 86.013 126.486 C 69.818 130.833 68.761 122.681 68.14 97.964 Z" style="stroke: rgba(0, 0, 0, 0); fill: url(#gradient-10);"><animate repeats='1' id='animate13' begin='indefinite' fill='freeze' calcMode='spline' keySplines='0 .06 0 .97' keyTimes='0;1' attributeName='d' dur='12000ms' to="M 55.21 105.95 C 57.733 114.529 114.801 99.399 112.254 90.738 C 123.536 115.964 118.212 136.627 97.042 142.078 C 80.803 146.259 65.338 131.428 55.21 105.95 Z"/> </path>
   <path d="M 65.621 71.386 C 73.187 66.787 74.757 123.742 73.282 132.028 C 73.282 132.028 73.916 123.242 72.899 120.682 C 65.839 102.914 78.876 22.508 100.091 72.56 C 102.929 79.255 98.089 86.6 106.603 88.21 C 109.251 88.711 110.816 108.552 110.816 108.552 C 110.816 108.552 109.611 116.801 111.581 117.942 C 112.973 118.748 110.433 126.551 110.433 126.551 C 110.433 126.551 111.19 129.51 109.283 131.244 C 103.986 136.064 105.8 144.744 99.709 148.46 C 97.396 149.87 101.41 154.006 98.943 155.111 C 95.538 156.636 91.926 157.948 88.219 158.24 C 85.14 158.483 81.973 158.015 79.027 157.067 C 74.07 155.474 73.98 150.948 70.219 147.286 C 67.857 144.986 67.952 132.013 65.622 129.679 C 63.214 127.267 64.91 123.17 64.091 112.466 C 63.678 107.072 64.091 91.729 64.091 91.729 C 64.091 91.729 59.049 86.584 59.877 79.211 C 60.224 76.12 63.005 72.977 65.621 71.386 Z" style="stroke: rgba(0, 0, 0, 0); fill: url(#gradient-12);"><animate repeats='1' id='animate14' begin='indefinite' fill='freeze' calcMode='spline' keySplines='0 .06 0 .97' keyTimes='0;1' attributeName='d' dur='12000ms' to="M 39.237 122.683 C 46.749 118.213 62.759 115.009 61.295 123.063 C 61.295 123.063 66.241 120.779 68.9 120.401 C 73.55 119.739 78.314 120.546 82.971 121.162 C 91.45 122.284 99.617 125.191 108.071 126.486 C 110.714 126.891 116.057 127.246 116.057 127.246 C 116.057 127.246 120.185 127.658 122.142 128.767 C 123.524 129.55 124.424 132.951 124.424 132.951 C 124.424 132.951 121.753 137.349 119.86 139.035 C 114.6 143.72 107.654 146.072 101.606 149.684 C 99.31 151.055 97.21 152.793 94.761 153.867 C 91.38 155.35 87.793 156.625 84.112 156.909 C 81.055 157.145 77.91 156.69 74.985 155.769 C 70.063 154.22 65.03 152.103 61.295 148.543 C 58.95 146.308 58.664 142.444 56.351 140.176 C 53.96 137.831 50.7 136.511 47.604 135.233 C 42.743 133.227 32.392 131.049 32.392 131.049 C 32.392 131.049 31.189 128.709 31.631 127.627 C 32.774 124.828 36.639 124.229 39.237 122.683 Z"/> </path>
 </svg>
-</div>
 
-<script  src="/attach/ann/js/rose.js"></script>
+<script src="/attach/ann/js/rose.js"></script>
 <!-- --------- -->
 
 <!-- 这里是表格 -->
 <form id="myForm" action="/submit" method="post" style="width:270px;">
-<fieldset style="padding:10px;">
-  <legend style="color: white;">想对你说的话（全答对才会出现哦）:</legend>
-  <div style="color: white;">对方是什么人:</div>
+<fieldset style="padding:10px;text-align:left;color: white;font-family:'STLiti';">
+  <legend>想对你说(全答对才会出现😜):</legend>
+  <div>对方是什么人:</div>
   <select id="person" class="dose_inp">
     <option>好哥哥</option>
     <option>臭哥哥</option>
     <option>大坏蛋</option>
     <option>男神</option>
   </select>
-  <div style="color: white;">你的口头禅:</div>
+  <div>你的口头禅:</div>
   <select id="tag" class="dose_inp">
     <option>我害怕</option>
     <option>无语了</option>
     <option>有点儿痒</option>
     <option>以上都是</option>
   </select>
-  <div style="color: white;">中辐院英文简称:</div>
+  <div>中辐院英文简称:</div>
   <input type="text" id="abbr" required class="dose_inp">
   <input type="submit" class="dose_inp">
 </fieldset>
 </form>
-</center>
 
-<link rel="stylesheet" href="/attach/ann/css/table.css">
-<script src="/attach/ann/js/ann.js"></script>
+<script src="/attach/ann/js/tb.js"></script>
 <!-- --------- -->
+
+</center>
 
 </div>
 </body>
