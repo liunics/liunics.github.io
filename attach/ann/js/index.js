@@ -1,13 +1,13 @@
 $(function() {
 	var canvas = $('#canvas')[0];
-	canvas.width = 300;
-	canvas.height = 300;
+	canvas.width = 270;
+	canvas.height = 270;
 	var ctx = canvas.getContext('2d');
 
 	// resize
 	$(window).on('resize', function() {
-		canvas.width = 300;
-		canvas.height = 300;
+		canvas.width = 270;
+		canvas.height = 270;
 		ctx.fillStyle = '#000003';
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
 		center = { x: canvas.width / 2, y: canvas.height / 2 };

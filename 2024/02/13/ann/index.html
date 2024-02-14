@@ -29,12 +29,12 @@ alert(time);
 <script type="text/javascript" src="/attach/ann/js/bg.js"></script>
 <!-- --------- -->
 
-<div style='width:350px;text-align:left;border:2px solid #ccc;margin:0px auto;padding:50px;font-family:"Times New Roman";background-color: rgba(256, 256, 256, 0.5);'>
+<div style='width:286px;text-align:left;border:2px solid #ccc;margin:0px auto;padding:50px;font-family:"Times New Roman";'>
 
 <h1 align='center' style="color:red">情人节快乐</h1>
 <!-- 这里是烟花 -->
 <center>
-<canvas id="canvas" style="width: 300px;display: block;margin:0px auto;"></canvas>
+<canvas id="canvas" style="width: 270px;display: block;margin:0px auto;"></canvas>
 
 <div class="block-audio" hidden="hidden" style="display: none;">
   <audio class="exp" src="/attach/ann/m/exp1.mp3" controls></audio>
@@ -79,13 +79,13 @@ alert(time);
 <!-- --------- -->
 
 <!-- 这里是照片 -->
-<div style="border: 2px solid red;width: 300px;height: 100px;">
+<div style="border: 2px solid red;width: 270px;height: 100px;">
   <img src="/attach/ann/head.jpg" class="img-first" />
 </div>
-<div style="border: 2px solid green;width: 300px;height: 100px;margin-top: 20px;">
+<div style="border: 2px solid green;width: 270px;height: 100px;margin-top: 20px;">
   <img src="/attach/ann/head.jpg" class="img-second" />
 </div>
-<div style="border: 2px solid orange;width: 300px;height: 100px;margin-top: 20px;padding: 0px;">
+<div style="border: 2px solid orange;width: 270px;height: 100px;margin-top: 20px;padding: 0px;">
   <img src="/attach/ann/head.jpg" class="img-third" />
 </div>
 
@@ -95,7 +95,7 @@ alert(time);
 <!-- 这里是玫瑰花 -->
 <div>
 <?xml version="1.0" encoding="utf-8"?>
-<svg  id='svg' width='300px' viewBox="0 0 188 264" xmlns="http://www.w3.org/2000/svg">
+<svg  id='svg' width='270px' viewBox="0 0 188 264" xmlns="http://www.w3.org/2000/svg">
  <defs>
     <radialGradient id="gradient-0" gradientUnits="userSpaceOnUse" cx="-107.308" cy="104.329" r="59.181" gradientTransform="matrix(0.261752, 0.411262, -0.686293, 0.596934, 160.094667, 49.38985)">
       <stop offset="0" style="stop-color: rgb(255, 0, 0);"/>
@@ -180,24 +180,24 @@ alert(time);
 <!-- --------- -->
 
 <!-- 这里是表格 -->
-<form id="myForm" action="/submit" method="post" style="width:300px;">
+<form id="myForm" action="/submit" method="post" style="width:270px;">
 <fieldset style="padding:10px;">
-  <legend>想对你说的话（全答对才会出现哦）:</legend>
-  <div>对方是什么人:</div>
+  <legend style="color: white;">想对你说的话（全答对才会出现哦）:</legend>
+  <div style="color: white;">对方是什么人:</div>
   <select id="person" class="dose_inp">
     <option>好哥哥</option>
     <option>臭哥哥</option>
     <option>大坏蛋</option>
     <option>男神</option>
   </select>
-  <div>你的口头禅:</div>
+  <div style="color: white;">你的口头禅:</div>
   <select id="tag" class="dose_inp">
     <option>我害怕</option>
     <option>无语了</option>
     <option>有点儿痒</option>
     <option>以上都是</option>
   </select>
-  <div>中辐院英文简称:</div>
+  <div style="color: white;">中辐院英文简称:</div>
   <input type="text" id="abbr" required class="dose_inp">
   <input type="submit" class="dose_inp">
 </fieldset>

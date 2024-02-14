@@ -1,6 +1,6 @@
 .img-first {
-width: 100px;
-height: 100px;
+width: 90px;
+height: 90px;
 -webkit-animation: 4s linear 0s infinite alternate move_img_first;
 animation: 4s linear 0s infinite alternate move_img_first;
 }
@@ -16,8 +16,8 @@ to {
 }
 
 .img-second {
-width: 100px;
-height: 100px;
+width: 90px;
+height: 90px;
 -webkit-animation: 4s linear 0s infinite alternate move_img_second;
 animation: 4s linear 0s infinite alternate move_img_second;
 }
@@ -34,8 +34,8 @@ to {
 
 /* img-third */
 .img-third {
-width: 100px;
-height: 100px;
+width: 90px;
+height: 90px;
 pointer-events: none;
 }
 @media (prefers-reduced-motion: no-preference) {
