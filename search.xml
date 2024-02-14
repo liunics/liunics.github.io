@@ -22,25 +22,6 @@ import define from "https://api.observablehq.com/@d3/collision-detection/2.js?v=
       </categories>
   </entry>
   <entry>
-    <title>公转时钟</title>
-    <url>/2020/09/29/clock/</url>
-    <content><![CDATA[<blockquote>
-<p>这是一个以类似星球公转代表当前时间的小程序。</p>
-</blockquote>
-<a id="more"></a>
-
-<div id="observablehq-8799067e"></div>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@mbostock/polar-clock.js?v=3";
-const inspect = Inspector.into("#observablehq-8799067e");
-(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
-</script>]]></content>
-      <categories>
-        <category>just for fun</category>
-      </categories>
-  </entry>
-  <entry>
     <title>在线计算器</title>
     <url>/2020/07/27/calc/</url>
     <content><![CDATA[<blockquote>
@@ -93,6 +74,25 @@ const inspect = Inspector.into("#observablehq-8799067e");
 <link rel="stylesheet" href="/attach/calc/shell.css">]]></content>
       <categories>
         <category>tool</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>公转时钟</title>
+    <url>/2020/09/29/clock/</url>
+    <content><![CDATA[<blockquote>
+<p>这是一个以类似星球公转代表当前时间的小程序。</p>
+</blockquote>
+<a id="more"></a>
+
+<div id="observablehq-8799067e"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@mbostock/polar-clock.js?v=3";
+const inspect = Inspector.into("#observablehq-8799067e");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script>]]></content>
+      <categories>
+        <category>just for fun</category>
       </categories>
   </entry>
   <entry>
@@ -234,7 +234,6 @@ const inspect = Inspector.into("#observablehq-8799067e");
 <a id="more"></a>
 
 <body>
-<div style='width:350px;text-align:left;border:2px solid #ccc;margin:0px auto;padding:50px;font-family:"Times New Roman";'>
 
 <!-- 弹出时间框 -->
 <div hidden="hidden">
@@ -252,12 +251,19 @@ alert(time);
 </div>
 <!-- --------- -->
 
+<!-- 背景 -->
+<p><canvas id="background-canvas"></canvas></p>
+<script type="text/javascript" src="/attach/ann/js/bg.js"></script>
+<!-- --------- -->
+
+<div style='width:350px;text-align:left;border:2px solid #ccc;margin:0px auto;padding:50px;font-family:"Times New Roman";background-color: rgba(256, 256, 256, 0.5);'>
+
 <h1 align='center' style="color:red">情人节快乐</h1>
 <!-- 这里是烟花 -->
 <center>
-<canvas id="canvas"></canvas>
+<canvas id="canvas" style="width: 300px;display: block;margin:0px auto;"></canvas>
 
-<div class="block-audio" hidden="hidden">
+<div class="block-audio" hidden="hidden" style="display: none;">
   <audio class="exp" src="/attach/ann/m/exp1.mp3" controls></audio>
   <audio class="exp" src="/attach/ann/m/exp1.mp3" controls></audio>
   <audio class="exp" src="/attach/ann/m/exp1.mp3" controls></audio>
