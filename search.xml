@@ -306,13 +306,13 @@ alert(time);
 <!-- --------- -->
 
 <!-- 这里是照片 -->
-<div style="border: 2px solid red;width: 270px;height: 100px;">
+<div style="border: 2px solid red;width: 270px;height: 90px;">
   <img src="/attach/ann/head.jpg" class="img-first" />
 </div>
-<div style="border: 2px solid green;width: 270px;height: 100px;margin-top: 20px;">
+<div style="border: 2px solid green;width: 270px;height: 90px;margin-top: 20px;">
   <img src="/attach/ann/head.jpg" class="img-second" />
 </div>
-<div style="border: 2px solid orange;width: 270px;height: 100px;margin-top: 20px;padding: 0px;">
+<div style="border: 2px solid orange;width: 270px;height: 90px;margin-top: 20px;padding: 0px;">
   <img src="/attach/ann/head.jpg" class="img-third" />
 </div>
 
