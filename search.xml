@@ -234,7 +234,7 @@ const inspect = Inspector.into("#observablehq-8799067e");
 
 <a id="more"></a>
 
-<body>
+<body oncontextmenu="return false;">
 
 <div id="hidden-div" style='display:none;width:386px;border:2px solid #ccc;margin:0px auto;padding:0px;'>
 
