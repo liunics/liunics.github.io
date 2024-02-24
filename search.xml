@@ -22,25 +22,6 @@ import define from "https://api.observablehq.com/@d3/collision-detection/2.js?v=
       </categories>
   </entry>
   <entry>
-    <title>公转时钟</title>
-    <url>/2020/09/29/clock/</url>
-    <content><![CDATA[<blockquote>
-<p>这是一个以类似星球公转代表当前时间的小程序。</p>
-</blockquote>
-<a id="more"></a>
-
-<div id="observablehq-8799067e"></div>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@mbostock/polar-clock.js?v=3";
-const inspect = Inspector.into("#observablehq-8799067e");
-(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
-</script>]]></content>
-      <categories>
-        <category>just for fun</category>
-      </categories>
-  </entry>
-  <entry>
     <title>在线计算器</title>
     <url>/2020/07/27/calc/</url>
     <content><![CDATA[<blockquote>
@@ -96,25 +77,20 @@ const inspect = Inspector.into("#observablehq-8799067e");
       </categories>
   </entry>
   <entry>
-    <title>一个程序员的交互式网页简历</title>
-    <url>/2021/01/02/cv/</url>
+    <title>公转时钟</title>
+    <url>/2020/09/29/clock/</url>
     <content><![CDATA[<blockquote>
-<p>这个简历是外国人写的，这里的应该是汉化版😂，它以一种类似超级玛丽游戏的方式给出各种信息，very interesting，可以说是前端程序员自带技能了，代码还是比较简单的，当然可以修改成自己的，但是可能会有版权问题，大家酌情使用。</p>
+<p>这是一个以类似星球公转代表当前时间的小程序。</p>
 </blockquote>
 <a id="more"></a>
 
-<iframe src="https://www.webhek.com/post/interactive-resume.html" style="border: 3px solid #ccc" width="800" height="700" scrolling=auto></iframe>
-
-<ul>
-<li><p>大佬原interactive-resume链接：<a href="http://www.rleonardi.com/interactive-resume/">点这里</a>；</p>
-</li>
-<li><p>此文,即汉化版链接：<a href="https://www.webhek.com/post/interactive-resume.html">点这里</a>。</p>
-</li>
-</ul>
-<blockquote>
-<p>代码就不附了，其实就在网页上，不是吗😂。</p>
-</blockquote>
-]]></content>
+<div id="observablehq-8799067e"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@mbostock/polar-clock.js?v=3";
+const inspect = Inspector.into("#observablehq-8799067e");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script>]]></content>
       <categories>
         <category>just for fun</category>
       </categories>
@@ -188,6 +164,30 @@ const inspect = Inspector.into("#observablehq-8799067e");
 </script>]]></content>
       <categories>
         <category>tool</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>一个程序员的交互式网页简历</title>
+    <url>/2021/01/02/cv/</url>
+    <content><![CDATA[<blockquote>
+<p>这个简历是外国人写的，这里的应该是汉化版😂，它以一种类似超级玛丽游戏的方式给出各种信息，very interesting，可以说是前端程序员自带技能了，代码还是比较简单的，当然可以修改成自己的，但是可能会有版权问题，大家酌情使用。</p>
+</blockquote>
+<a id="more"></a>
+
+<iframe src="https://www.webhek.com/post/interactive-resume.html" style="border: 3px solid #ccc" width="800" height="700" scrolling=auto></iframe>
+
+<ul>
+<li><p>大佬原interactive-resume链接：<a href="http://www.rleonardi.com/interactive-resume/">点这里</a>；</p>
+</li>
+<li><p>此文,即汉化版链接：<a href="https://www.webhek.com/post/interactive-resume.html">点这里</a>。</p>
+</li>
+</ul>
+<blockquote>
+<p>代码就不附了，其实就在网页上，不是吗😂。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>just for fun</category>
       </categories>
   </entry>
   <entry>

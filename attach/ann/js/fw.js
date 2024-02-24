@@ -1,7 +1,7 @@
 $(function() {
 	var canvas = $('#fireworks-canvas')[0];
 	canvas.style.display = 'block'; // 显示 div 元素
-	canvas.width = 386;
+	// canvas.width = 386;
 	canvas.height = window.innerHeight;
 	var ctx = canvas.getContext('2d');
 
