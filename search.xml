@@ -96,6 +96,30 @@ const inspect = Inspector.into("#observablehq-8799067e");
       </categories>
   </entry>
   <entry>
+    <title>一个程序员的交互式网页简历</title>
+    <url>/2021/01/02/cv/</url>
+    <content><![CDATA[<blockquote>
+<p>这个简历是外国人写的，这里的应该是汉化版😂，它以一种类似超级玛丽游戏的方式给出各种信息，very interesting，可以说是前端程序员自带技能了，代码还是比较简单的，当然可以修改成自己的，但是可能会有版权问题，大家酌情使用。</p>
+</blockquote>
+<a id="more"></a>
+
+<iframe src="https://www.webhek.com/post/interactive-resume.html" style="border: 3px solid #ccc" width="800" height="700" scrolling=auto></iframe>
+
+<ul>
+<li><p>大佬原interactive-resume链接：<a href="http://www.rleonardi.com/interactive-resume/">点这里</a>；</p>
+</li>
+<li><p>此文,即汉化版链接：<a href="https://www.webhek.com/post/interactive-resume.html">点这里</a>。</p>
+</li>
+</ul>
+<blockquote>
+<p>代码就不附了，其实就在网页上，不是吗😂。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>just for fun</category>
+      </categories>
+  </entry>
+  <entry>
     <title>计算屏蔽已知活度的伽马点源所需铅层厚度</title>
     <url>/2020/08/03/dose/</url>
     <content><![CDATA[<blockquote>
@@ -164,30 +188,6 @@ const inspect = Inspector.into("#observablehq-8799067e");
 </script>]]></content>
       <categories>
         <category>tool</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>一个程序员的交互式网页简历</title>
-    <url>/2021/01/02/cv/</url>
-    <content><![CDATA[<blockquote>
-<p>这个简历是外国人写的，这里的应该是汉化版😂，它以一种类似超级玛丽游戏的方式给出各种信息，very interesting，可以说是前端程序员自带技能了，代码还是比较简单的，当然可以修改成自己的，但是可能会有版权问题，大家酌情使用。</p>
-</blockquote>
-<a id="more"></a>
-
-<iframe src="https://www.webhek.com/post/interactive-resume.html" style="border: 3px solid #ccc" width="800" height="700" scrolling=auto></iframe>
-
-<ul>
-<li><p>大佬原interactive-resume链接：<a href="http://www.rleonardi.com/interactive-resume/">点这里</a>；</p>
-</li>
-<li><p>此文,即汉化版链接：<a href="https://www.webhek.com/post/interactive-resume.html">点这里</a>。</p>
-</li>
-</ul>
-<blockquote>
-<p>代码就不附了，其实就在网页上，不是吗😂。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>just for fun</category>
       </categories>
   </entry>
   <entry>
